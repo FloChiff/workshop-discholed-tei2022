@@ -40,12 +40,14 @@ Now, here are different displays possible
 
 #### Displaying the facsimile
 1. Access your ODD by clicking on __Admin__ in the menubar, then __Edit OOD: nameofyourodd.odd__
-2. Add the element "pb", open a new model and change the following setting `behaviour = webcomponent` and add the following parameters `name='pb-facs-link'; content=\@n; facs=replace(\@facs, '(.*)$', '$1')`
+2. Add the element "pb", open a new model and change the following setting `behaviour = webcomponent` and add the following parameters `name='pb-facs-link'; facs=replace(\@facs, '(.*)$', '$1')`
 3. Save the changes and click on the ![](https://cdn.icon-icons.com/icons2/2368/PNG/32/reload_update_refresh_icon_143703.png)__Reload__ button in the toolbar
-4. Acces exide via the dashboard or the menubar by clicking on __Download__ then __XML__ once you are on your text and login with the same user and password you used on the application
+4. Access eXide via the dashboard or the menubar by clicking on __Download__ then __XML__ once you are on your text and login with the same user and password you used on the application
 5. Open the template "facsimile.html" by clicking, in the left side of the page, on Directory-->the name of your application-->templates-->pages-->facsimile.html
 6. Go to line 76 "\<pb-facsimile\>" and change the 'base-uri' to "http://localhost:8182/iiif/3/" to match the local Cantaloupe where we have our images
 7. Save the changes, click on ![](https://cdn.icon-icons.com/icons2/685/PNG/32/run_icon-icons.com_61189.png)__Run__, which will lead you to your homepage; click on your file and you should see your image next to your text
+
+---
 
 #### Creating and displaying modes
 1. Access your ODD
@@ -62,8 +64,71 @@ by
 `<pb-panel id="view1" emit="transcription"><template title="Red"><pb-view src="document1" class=".transcription" subscribe="transcription" emit="transcription"><pb-param name="mode" value="red"/></pb-view></template><template title="Green"><pb-view src="document1" class=".transcription" subscribe="transcription" emit="transcription"><pb-param name="mode" value="green"/></pb-view></template></pb-panel>`
 10. Save the changes, click on ![](https://cdn.icon-icons.com/icons2/685/PNG/32/run_icon-icons.com_61189.png)__Run__, which will lead you to your homepage; click on your file and you can now see a dropdown above your text, where you can choose the display you want
 
+---
+
 #### Working with the index
-...  
+1. Go to eXide and login
+2. Open the template "facsimile.html" by clicking, in the left side of the page, on Directory-->the name of your application-->templates-->pages-->facsimile.html
+3. Go to the end of the file and paste after the `\<pb-facsmile\>` the following sequence:  
+`<pb-view id="view1" src="document1" column-separator=".tei-cb" append-footnotes="append-footnotes" subscribe="transcription" emit="letter"><pb-param name="mode" value="facets"/></pb-view>`
+4. Go to your ODD
+5. Add the element "div", open a _modelSequence_ (second choice on the dropdown) and put in the predicate: `$parameters?mode="facets"`
+6. Add a new model inside the _modelSequence_ with the ![](https://cdn.icon-icons.com/icons2/1769/PNG/32/4115237-add-plus_114047.png) button and put the following informations:
+	- Predicate: `descendant::persName`
+    - Behaviour: `heading`
+    - Parameters: `content='Persons'; level=2`
+    - Renditions: `font-weight: 200; border-bottom: 1px solid #A0A0A0;`
+ 7. Add a new model inside the _modelSequence_ and after this one and put the following informations:
+ 	- Behaviour: `block`
+    - Parameters: `content=for $n in .//persName group by $ref := $n/@ref order by $ref return $n[1]`
+ 8. Do those tasks again but change both content:
+ 	- 'Places' instead of 'Persons'
+    - 'for $n in .//placeName group by $ref := $n/\@ref order by $ref return $n[1]' instead of 'for $n in .//persName group by $ref := $n/\@ref order by $ref return $n[1]'
+9. Similarly to what we did with the facsimile, we are going to transform the "placeName" and "persName" we already took care of into webcomponent to make the index appears. Create a new model in each of this element and put the following information:
+	- Predicate: `$parameters?mode="facets"`
+    - Behaviour: `webcomponent`
+    - Parameters: `name='pb-highlight'; key"=substring-after(@ref, '#'); subscribe='letter'; emit='facets'; content=id(substring-after(@ref, '#'), root($parameters?root))`
+10. The model in green/red will also be adapted in order to match what we just did. Change the behaviour into _webcomponent_ and add the following parameters:
+	- `name='pb-highlight'; content=.; key=substring-after(@ref, '#'); scroll=true(); emit='letter'`
+11. Finally, still in each element, add a new model, in first position, with the following information:
+	- Predicate: `parent::person` (persName) or `parent::place` (placeName)
+    - Behaviour: `inline`
+12. Go back to your text, reload the ODD and the index should appear clearly on the right side of the page
+
+---
 
 #### Displaying the sourceDoc
-...
+1. Create a new HTML file called "sourcedoc.html" in _Templates_
+2. Replace  
+`<pb-view id="view1" src="document1" column-separator=".tei-cb" append-footnotes="append-footnotes" subscribe="transcription" emit="transcription" wait-for="#facsimile"/>`  
+by  
+`<pb-panel id="view1" emit="transcription"><template title="Body"><pb-view src="document1" subscribe="transcription" emit="transcription"/></template></pb-panel><pb-panel id="view1" emit="transcription"><template title="sourceDoc"><pb-view id="view1" src="document1" xpath="//sourceDoc" view="single" emit="transcription"><pb-param name="mode" value="sourcedoc"/></pb-view></template></pb-panel>`
+3. Go to your TEI-XML file with the sourceDoc and add, in the first line of the file, `<?teipublisher template="sourceDoc.html"?>`
+4. Go to your ODD
+5. Add the element "graphic" and change the behaviour of the already existing model that appears from `graphic` to `omit`
+6. Add the elements "sourceDoc" and "surfaceGrp" and put the following informations:
+	- Predicate: `$parameters?mode="sourcedoc"`
+    - Behaviour: `block`
+ 7. Add the element "surface" and put the following informations:
+ 	- Predicate: `$parameters?mode="sourcedoc"`
+    - Behaviour: `list`
+    - Template: `<h5>[[head]]</h5><ul style="border: 1px solid black; padding: 5px;">[[surface]]</ul>`
+    - Parameters: `head=upper-case(replace(@type, '_', ' ')); surface=.`
+8. Add the element "zone" and put the following informations:
+ 	- Predicate: `$parameters?mode="sourcedoc"`
+    - Behaviour: `listItem`
+    - Rendition: `list-style: none;`
+9. Save the changes, go back to your text, reload the ODD and go see your sourceDoc
+
+---
+
+#### Creating a collection
+1. Go to eXide and login
+2. Click on _File_ at the top of the eXide page, then ![](https://cdn.icon-icons.com/icons2/37/PNG/32/database_theapplication_3365.png)_Manage_
+3. Once the __DB Manager__ opened, go to your app by double-clicking on apps-->name of your application-->data
+4. Click on ![](https://cdn.icon-icons.com/icons2/1365/PNG/32/folder_89347.png)_Create collection_, give a name to your collection and click on __OK__
+5. Cut and paste your XML files into this new collection
+6. Create a new file with ![](https://cdn.icon-icons.com/icons2/1456/PNG/32/mbrinewfile_99512.png)__New__, put _HTML_ as the type and click on __Create__
+7. Copy/paste the following sequence:  
+`<div class="collection" data-template="browse:clear-facets"><ul class="documents"><li class="document"><div class="document-info"><h3><a href="#" data-collection="name_of_your_collection">Name of your collection</a></h3><p>Description of your collection.</p></div></li></ul></div>`
+8. Save the changes, click on ![](https://cdn.icon-icons.com/icons2/685/PNG/32/run_icon-icons.com_61189.png)__Run__, which will lead you to your homepage to see your collection appears.
