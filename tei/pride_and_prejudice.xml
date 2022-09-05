@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Pride and prejudice</title>
+                <title type="sub">A novel in three volumes</title>
+                <title type="sub">By the author of "Sense and sensibility"</title>
+                <title type="sub">Vol III</title>
+                <author>Jane Austen</author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Thomas Egerton, Military Library</publisher>
+                <pubPlace>Whitehall, London</pubPlace>
+                <date>1813</date>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/3.0/deed.en">Attribution 3.0 Unported (CC BY 3.0) </licence>
+                </availability>
+            </publicationStmt>
+            <seriesStmt>
+                <title type="main"/>
+                <title type="genre"/>
+                <title type="topic"/>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country>India</country>
+                        <settlement>West Bengal</settlement>
+                        <institution>Uttarpara Jaykrishna Public Librar</institution>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The encoding of the document was done for a workshop for the TEI 2022 conference.</p>
+            </projectDesc>
+            <editorialDecl>
+                <correction>
+                    <p>No correction</p>
+                </correction>
+                <hyphenation eol="hard" rend="sh">
+                    <p>All the end-of-line hyphenation (made with a single hyphen) have been kept.</p>
+                </hyphenation>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <creation when="1813"/>
+            <langUsage>
+                <language ident="en"/>
+            </langUsage>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="p0001">
+                        <persName>
+                            <forename>Elisabeth</forename>
+                            <surname>Bennet</surname>
+                        </persName>
+                    </person>
+                    <person xml:id="p0002">
+                        <persName>
+                            <forename>Fitzwilliam</forename>
+                            <surname>Darcy</surname>
+                        </persName>
+                    </person>
+                    <person xml:id="p0003">
+                        <persName>
+                            <forename>Georgiana</forename>
+                            <surname>Darcy</surname>
+                        </persName>
+                    </person>
+                    <person xml:id="p0004">
+                        <persName>Mrs Gardiner</persName>
+                    </person>
+                    <person xml:id="p0005">
+                        <persName>Mr Gardiner</persName>
+                    </person>
+                    <person xml:id="p0006">
+                        <persName>
+                            <forename>Charles</forename>
+                            <surname>Bingley</surname>
+                        </persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <settingDesc>
+                <listPlace>
+                    <place xml:id="l0001" type="house">
+                        <placeName>Pemberley</placeName>
+                        <region>Derbyshire</region>
+                        <country>England</country>
+                    </place>
+                    <place xml:id="l0002" type="city">
+                        <placeName>Lambton</placeName>
+                        <region>Derbyshire</region>
+                        <country>England</country>
+                    </place>
+                    <place xml:id="l0003" type="inn">
+                        <placeName>An inn</placeName>
+                        <settlement>Lambton</settlement>
+                        <region>Derbyshire</region>
+                        <country>England</country>
+                    </place>
+                </listPlace>
+            </settingDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change when-iso="2022-08-26" who="#floriane.chiffoleau">Encoding of the text</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="transcription">
+                <pb n="35" facs="iiif:PP3_p35.png"/>
+                <note type="foliation" place="top(center)">( 35 )</note>
+                <p rend="align(center)"><title>CHAPTER II.</title></p>
+                <p rend="indent"><persName ref="#p0001">ELIZABETH</persName> had settled it that Mr.</p>
+                <p rend="indent"><persName ref="#p0002">Darcy</persName> would bring <rs ref="#p0003" type="person">his sister</rs> to visit her,<lb/>
+                    the very day after her reaching <placeName ref="#l0001">Pember-<lb break="no"/>ley</placeName>; and was consequently resolved
+                    not<lb/> to be out of sight of <placeName ref="#l0003">the inn</placeName> the whole of<lb/> that morning. But her conclusion
+                    was<lb/> false; for on the very morning after<lb/> their own arrival at <placeName ref="#l0002">Lambton</placeName>, these<lb/>
+                    visitors came. They had been walking<lb/> about the place with some of their new<lb/> friends, and were just returned to
+                        <placeName ref="#l0003">the inn</placeName><lb/> to dress themselves for dining with the<lb/> same family, when the sound of a
+                        car-<lb break="no"/>riage drew them to a window, and they<lb/> saw a gentleman and lady in a curricle,<lb/> driving up the
+                    street. <persName ref="#p0001">Elizabeth</persName> im-<lb break="no"/>mediately recognising the livery, guessed<lb/> what it
+                    meant, and imparted no small<lb/> degree of surprise to her relations, by<lb/> acquainting them with the honour which<lb/>
+                    <hi rend="align(right)">she</hi>
+                    <pb n="36" facs="iiif:PP3_p36.png"/>
+                    <note type="foliation" place="top(center)">( 36 )</note> she expected. <rs ref="#p0005" type="person">Her uncle</rs> and <rs
+                        ref="#p0004" type="person">aunt</rs> were<lb/> all amazement; and the embarrass-<lb break="no"/>ment of her manner as she
+                    spoke, joined<lb/> to the circumstance itself, and many of<lb/> the circumstances of the preceding day,<lb/> opened to them a new
+                    idea on the busi-<lb break="no"/>ness. Nothing had ever suggested it<lb/> before, but they now felt that there was<lb/> no other
+                    way of accounting for such at-<lb break="no"/>tentions from such a quarter, than by<lb/> supposing a partiality for <rs
+                        ref="#p0001" type="person">their niece</rs>.<lb/> While these newly-born notions were<lb/> passing in their heads, the
+                    perturbation<lb/> of <persName ref="#p0001">Elizabeth</persName>'s feelings was every moment<lb/> increasing. She was quite amazed
+                    at<lb/> her own discomposure; but amongst<lb/> other causes of disquiet, she dreaded lest<lb/> the partiality of <rs ref="#p0002"
+                        type="person">the brother</rs> should have<lb/> said too much in her favour; and more<lb/> than commonly anxious to please,
+                    she<lb/> naturally suspected that every power of<lb/> pleasing would fail her. <lb/> She retreated from the window, fear-<lb
+                        break="no"/><hi rend="align(right)">ful</hi>
+                    <pb n="37" facs="iiif:PP3_p37.png"/>
+                    <note type="foliation" place="top(center)">( 37 )</note> ful of being seen; and as she walked up<lb/> and down the room,
+                    endeavouring to<lb/> compose herself, saw such looks of en-<lb break="no"/>quiring surprise in <rs ref="#p0005" type="person">her
+                        uncle</rs> and <rs ref="#p0005" type="person">aunt</rs>,<lb/> as made every thing worse.</p>
+                <p rend="indent"><persName ref="#p0003">Miss Darcy</persName> and <rs ref="#p0002" type="person">her brother</rs> appeared,<lb/> and
+                    this formidable introduction took<lb/> place. With astonishment did <persName ref="#p0001">Elizabeth</persName><lb/> see, that her
+                    new acquaintance was at<lb/> least as much embarrassed as herself.<lb/> Since her being at <placeName ref="#l0002"
+                        >Lambton</placeName>, she had h<lb/> eard that <persName ref="#p0003">Miss Darcy</persName> was exceedingly<lb/> proud; but
+                    the observation of a very<lb/> few minutes convinced her, that she was<lb/> only exceedingly shy. She found it<lb/> difficult to
+                    obtain even a word from her<lb/> beyond a monosyllable.</p>
+                <p rend="indent"><persName ref="#p0003">Miss Darcy</persName> was tall, and on a larger<lb/> scale than <persName ref="#p0001"
+                        >Elizabeth</persName>; and, though little<lb/> more than sixteen, her figure was formed,<lb/> and her appearance womanly and
+                        grace-<lb break="no"/>ful. She was less handsome than her<lb/> brother, but there was sense and good<lb/>
+                    <hi rend="align(right)">humour</hi>
+                    <pb n="38" facs="iiif:PP3_p38.png"/>
+                    <note type="foliation" place="top(center)">( 38 )</note> humour in her face, and her manners<lb/> were perfectly unassuming and gentle.<lb/>
+                    <persName ref="#p0001">Elizabeth</persName>, who had expected to find in<lb/> her as acute and unembarrassed an ob-<lb break="no"
+                    />server as ever <persName ref="#p0002">Mr. Darcy</persName> had been, was<lb/> much relieved by discerning such dif-<lb
+                        break="no"/>ferent feelings.</p>
+                <p rend="indent">They had not been long together,<lb/> before <persName ref="#p0002">Darcy</persName> told her that <persName
+                        ref="#p0006">Bingley</persName> was<lb/> also coming to wait on her; and she had<lb/> barely time to express her
+                    satisfaction,<lb/> and prepare for such a visitor, when<lb/>
+                    <persName ref="#p0006">Bingley</persName>'s quick step was heard on the<lb/> stairs, and in a moment he entered the<lb/> room. All
+                        <persName ref="#p0001">Elizabeth</persName>'s anger against him<lb/> had been long done away; but, had she<lb/> still felt
+                    any, it could hardly have stood<lb/> its ground against the unaffected cor-<lb break="no"/>diality with which he expressed
+                    himself,<lb/> on seeing her again. He enquired in a<lb/> friendly, though general way, after her<lb/> family, and looked and spoke
+                    with the<lb/> same good-humoured ease that he had<lb/> ever done.</p>
+                <p rend="align(right)">To</p>
+            </div>
+        </body>
+    </text>
+</TEI>
