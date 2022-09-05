@@ -12,6 +12,13 @@ The program for this workshop is the following: firstly, it will start with a pr
 - TEI Guidelines (Guidelines for Electronic Text Encoding and Interchange): [https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html](https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html)
 - TEI Publisher (Instant Publishing Toolbox): [https://teipublisher.com/index.html](https://teipublisher.com/index.html) 
 
+## Content of the repository
+- images: folder of the facsimile for the first step; the images have been extracted from Internet Archives [[facsimile](https://archive.org/details/JaneAusten-PrideandPrejudice-1sted-1813-vol3)] and Wikipedia [[picture](https://commons.wikimedia.org/wiki/File:Jane_Austen,_from_A_Memoir_of_Jane_Austen_(1870).jpg)]
+- instructions: markdown files giving step by step process for each of the part of the workshop
+- scripts: XSLT and Python files to transform texts for the second step
+- alto and text: files for the second step
+- tei, text and xml: XML and TXT files for the third and fourth step
+
 ## Bibliography
 Chagué, Alix, and Floriane Chiffoleau. _An accessible and transparent pipeline for publishing historical ego documents_. 2021. ⟨[hal-03180669](https://hal.archives-ouvertes.fr/hal-03180669)⟩  
 Chagué, Alix, and Hugo Scheithauer. 2021. _page2tei, an XSL Transformation to transform PAGE XML into TEI XML (Version 1.0.0)_ [Computer software]  
