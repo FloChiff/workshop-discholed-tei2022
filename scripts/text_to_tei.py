@@ -107,10 +107,12 @@ def tagging_regex(text):
 
     #This series of statements contains regex of recurrent terms from the corpus
     dateline = re.compile(r'^[A-Za-zÀ-ÖØ-öø-ÿ-]+(( |-)[A-Za-zÀ-ÖØ-öø-ÿ-]+)?, (le )?[0-9]* [A-Za-zÀ-ÖØ-öø-ÿ-]+ 19[1-2][0-9] ?.?')
-    page_numbering = re.compile(r'- [0-9]* -')
+    page_break = re.compile(r'==--==--==--==')
+    page_numbering = re.compile(r'(-|\() ?[0-9]* ?(-|\))')
 
     #This series of statements contains the encoding for the declared recurrent terms from the corpus
     text = re.sub(dateline, r'<dateline rend="align(right)">\g<0></dateline>', text)
+    text = re.sub(page_break, '', text)
     text = re.sub(page_numbering, r'<pb n="" facs=".JPG"/><note type="foliation" place="top">\g<0></note>',text)
     return text
 

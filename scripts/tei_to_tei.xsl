@@ -8,9 +8,9 @@
     
     <xsl:template match="/">
         <!-- Create a variable to store the xml files in the folder by the function collection() -->
-        <xsl:variable name="files" select="collection('../xml/xml_to_xml/?select=*alto.xml')"/>
+        <xsl:variable name="files" select="collection('../xml/xml_to_xml/?select=*page.xml')"/>
         <!-- Give the path to the output of the newly transformed file -->
-        <xsl:result-document method="xml" indent="yes" href="../out.xml">
+        <xsl:result-document method="xml" indent="yes" href="../tei/tei_out.xml">
         <TEI>
             <teiHeader>
                 <fileDesc>
