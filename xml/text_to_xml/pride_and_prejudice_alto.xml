@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+                    <teiHeader>
+                        <fileDesc>
+                            <titleStmt>
+                                <title xml:lang="en"/>
+                                <principal>
+                                    <persName ref="#."/>
+                                </principal>
+                                <respStmt>
+                                    <resp>Edited by</resp>
+                                    <persName ref="#."/>
+                                </respStmt>
+                            </titleStmt>
+                            <publicationStmt>
+                                <authority/>
+                                <availability>
+                                    <licence target="https://creativecommons.org/licenses/by/3.0/deed.en">Attribution 3.0 Unported (CC BY 3.0) </licence>
+                                </availability>
+                                <date when-iso="...."/>
+                            </publicationStmt>
+                            <seriesStmt>
+                                <title type="main"/>
+                                <title type="genre"/>
+                                <title type="topic"/>
+                            </seriesStmt>
+                            <sourceDesc>
+                                <msDesc>
+                                    <msIdentifier/>
+                                    <msContents/>
+                                    <physDesc/>
+                                </msDesc>
+                            </sourceDesc>
+                        </fileDesc>
+                        <encodingDesc>
+                            <projectDesc>
+                                <p/>
+                            </projectDesc>
+                        </encodingDesc>
+                        <profileDesc>
+                            <langUsage>
+                                <language ident=""/>
+                            </langUsage>
+                        </profileDesc>
+                        <revisionDesc>
+                            <change when-iso="....-..-.." who="#.">Encoding of the text</change>
+                        </revisionDesc>
+                    </teiHeader>
+                    <text>
+                        <body>
+                            <div type="transcription">
+                                <pb n="" facs=".JPG"/>
+                                <p>
+                            Elizabeth had settled it that Mr.</p>
+<p rend="indent">Darcy would bring his sister to visit her,<lb/> the very day after her reaching Pember-<lb break="no"/>ley; and was consequently resolved not<lb/> to be out of sight of the inn the whole of<lb/> that morning. But her conclusion was<lb/> false; for on the very morning after<lb/> their own arrival at Lambton, these<lb/> visitors came. They had been walking<lb/> about the place with some of their new<lb/> friends, and were just returned to the inn<lb/> to dress themselves for dining with the<lb/> same family, when the sound of a car-<lb break="no"/>riage drew them to a window, and they<lb/> saw a gentleman and lady in a curricle,<lb/> driving up the street. Elizabeth im-<lb break="no"/>mediately recognising the livery, guessed<lb/> what it meant, and imparted no small<lb/> degree of surprise to her relations, by<lb/> acquainting them with the honour which<lb/> she<lb/> <pb n="" facs=".JPG"/><note type="foliation" place="top">( 35 )</note><lb/> CHAPTER II.</p>
+<p rend="indent"><lb/> <pb n="" facs=".JPG"/><note type="foliation" place="top">( 36 )</note>
+she expected. Her uncle and aunt were<lb/> all amazement; and the embarrass-<lb break="no"/>ment of her manner as she spoke, joined<lb/> to the circumstance itself, and many of<lb/> the circumstances of the preceding day,<lb/> opened to them a new idea on the busi-<lb break="no"/>ness. Nothing had ever suggested it<lb/> before, but they now felt that there was<lb/> no other way of accounting for such at-<lb break="no"/>tentions from such a quarter, than by<lb/> supposing a partiality for their niece.</p>
+<p rend="indent">While these newly-born notions were<lb/> passing in their heads, the perturbation<lb/> of Elizabeth's feelings was every moment<lb/> increasing. She was quite amazed at<lb/> her own discomposure; but amongst<lb/> other causes of disquiet, she dreaded lest<lb/> the partiality of the brother should have<lb/> said too much in her favour; and more<lb/> than commonly anxious to please, she<lb/> naturally suspected that every power of<lb/> pleasing would fail her. <lb/> She retreated from the window, fear-<lb break="no"/>ful<lb/> <lb/> <pb n="" facs=".JPG"/><note type="foliation" place="top">( 37 )</note>
+ful of being seen; and as she walked up<lb/> and down the room, endeavouring to<lb/> compose herself, saw such looks of en-<lb break="no"/>quiring surprise in her uncle and aunt,<lb/> as made every thing worse. <lb/> Miss Darcy and her brother appeared,<lb/> and this formidable introduction took<lb/> place. With astonishment did Elizabeth<lb/> see, that her new acquaintance was at<lb/> least as much embarrassed as herself.</p>
+<p rend="indent">Since her being at Lambton, she had h<lb/> eard that Miss Darcy was exceedingly<lb/> proud; but the observation of a very<lb/> few minutes convinced her, that she was<lb/> only exceedingly shy. She found it<lb/> difficult to obtain even a word from her<lb/> beyond a monosyllable. <lb/> Miss Darcy was tall, and on a larger<lb/> scale than Elizabeth; and, though little<lb/> more than sixteen, her figure was formed,<lb/> and her appearance womanly and grace-<lb break="no"/>ful. She was less handsome than her<lb/> brother, but there was sense and good<lb/> humour<lb/> <lb/> <pb n="" facs=".JPG"/><note type="foliation" place="top">( 38 )</note>
+humour in her face, and her manners<lb/> were perfectly unassuming and gentle.</p>
+<p rend="indent">Elizabeth, who had expected to find in<lb/> her as acute and unembarrassed an ob-<lb break="no"/>server as ever Mr. Darcy had been, was<lb/> much relieved by discerning such dif-<lb break="no"/>ferent feelings. <lb/> They had not been long together,<lb/> before Darcy told her that Bingley was<lb/> also coming to wait on her; and she had<lb/> barely time to express her satisfaction,<lb/> and prepare for such a visitor, when<lb/> Bingley's quick step was heard on the<lb/> stairs, and in a moment he entered the<lb/> room. All Elizabeth's anger against him<lb/> had been long done away; but, had she<lb/> still felt any, it could hardly have stood<lb/> its ground against the unaffected cor-<lb break="no"/>diality with which he expressed himself,<lb/> on seeing her again. He enquired in a<lb/> friendly, though general way, after her<lb/> family, and looked and spoke with the<lb/> same good-humoured ease that he had<lb/> ever done.</p>
+<p rend="indent">To      
+                            </p></div>
+                        </body>
+                    </text>
+                </TEI>
+                
