@@ -23,7 +23,7 @@ The program for this workshop is the following:
 - TEI Publisher (Instant Publishing Toolbox, developped by [e-editiones](https://e-editiones.org/): [https://teipublisher.com/index.html](https://teipublisher.com/index.html) 
 
 ## Content of the repository
-- images: folder of the facsimile for the first step; the images have been extracted from the Internet Archives [[facsimile](https://archive.org/details/JaneAusten-PrideandPrejudice-1sted-1813-vol3)] and Wikipedia [[picture](https://commons.wikimedia.org/wiki/File:Jane_Austen,_from_A_Memoir_of_Jane_Austen_(1870).jpg)],
+- images: folder of the facsimile for the first step; the images have been extracted from the Internet Archive [[facsimile](https://archive.org/details/JaneAusten-PrideandPrejudice-1sted-1813-vol3)] and Wikipedia [[picture](https://commons.wikimedia.org/wiki/File:Jane_Austen,_from_A_Memoir_of_Jane_Austen_(1870).jpg)],
 - instructions: markdown files giving step by step instructions for each part of the workshop,
 - scripts: XSLT and Python scripts to transform texts for the second step,
 - alto and text: files for the second step,

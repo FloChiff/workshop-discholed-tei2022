@@ -30,17 +30,17 @@ As I recommended it in the presentation of the workshop, you should have TEI Pub
 8. Select _Shakespeare Play_ as the HTML Template by default (template with the facsimile which will be useful afterwards).
 9. Select _By page_ as the browsing by choice, because we have pagebreaks in our TEI file.
 10. Leave the __Default Full Text Division__ as _Create on division_.
-11. Set a user and password for your application. As your application is only accessible locally and was made for demonstration purposes, your credentials can be basic. for the demonstration, we are using workshop/workshop).
+11. Set a user and password for your application. As your application is only accessible locally and is made for demonstration purposes, your credentials can be basic. For the demonstration, we are using workshop/workshop).
 12. Click on ![](https://cdn.icon-icons.com/icons2/1369/PNG/32/-save_90104.png)__SAVE/GENERATE__ and wait until a box open saying that your application has been generated.
 13. Go back to the Exist dashboard, refresh the page and your application should now appear.
 
 ### Modifying the application to your need
 Firstly, to work on your application, you need to login the user and password you've just set, then add your file by using the ![](https://cdn.icon-icons.com/icons2/1369/PNG/32/-file-upload_90320.png) __Upload__ button.  
 
-Now, here are different ways of diaplsying your files:
+Now, here are different ways of displaying your files:
 
 #### Displaying the facsimile
-1. Access your ODD by clicking on __Admin__ in the navigation bar, then __Edit OOD: nameofyourodd.odd__.
+1. Access your ODD by clicking on __Admin__ in the menubar, then __Edit OOD: nameofyourodd.odd__.
 2. Add the element "pb", open a new model and change the following setting `behaviour = webcomponent` and add the following parameters `name='pb-facs-link'; facs=replace(\@facs, '(.*)$', '$1')`.
 3. Save the changes and click on the ![](https://cdn.icon-icons.com/icons2/2368/PNG/32/reload_update_refresh_icon_143703.png)__Reload__ button in the toolbar.
 4. Access eXide via the dashboard or the menubar by clicking on __Download__ then __XML__ once you are on your text and login with the same user and password you used to log in your application.
