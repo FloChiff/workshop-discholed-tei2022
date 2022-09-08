@@ -5,9 +5,8 @@ A virtual environment should be created for running the python scripts we use fo
 
 As stated in the Python [documentation](https://docs.python.org/3/library/venv.html):
 
-```
-A virtual environment is a Python environment such that the Python interpreter, libraries and scripts installed into it are isolated from those installed in other virtual environments, and (by default) any libraries installed in a “system” Python, i.e., one which is installed as part of your operating system.
-```
+> A virtual environment is a Python environment such that the Python interpreter, libraries and scripts installed into it are isolated from those installed in other virtual environments, and (by default) any libraries installed in a “system” Python, i.e., one which is installed as part of your operating system.
+
 
 To create a virtual environment, use the following command line in your terminal (note: be sure to be working in the workshop directory):
 ```commandline
