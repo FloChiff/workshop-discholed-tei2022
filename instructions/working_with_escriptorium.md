@@ -25,14 +25,14 @@ You can also add a transcription already available and made without eScriptorium
 2. Make sure that you have two views on: __Segmentation__ and __Transcription__ (2nd and 3rd buttons on the far right of the page)
 3. Click on the empty box in the __Transcription__ and add the transcription by hand.
 
-#### Automatic transcription
+#### Autofill XML files with already available transcription
 1. Download your images segmented in the _ALTO_ format.
 2. Unzip it and make sure that the images are numbered (example: filename_1.xml, filename_2.xml).
 3. Open your transcription (TXT file) and put the following characters at each page break:  
-`==--==--==--==` followed by a linebreak (_\n_).
-4. Open the Python script _text\_alignement.xml_ and at lines 73 and 82, change `PP3_p` by the name of your file prior the number.
+`==--==--==--==` (make sure it is followed by a linebreak (_\n_)).
+4. Open the Python script _text\_alignement.py_ and at lines 73 and 82, change `PP3_p` by the name of your file prior the number.
 5. Save thoses changes, open your terminal and enter the following command:  
-```$ python text_alignement.xml --xml path/to/the/ALTO/files --txt path/to/the/TXT/file```
+```$ python text_alignement.py --xml path/to/the/ALTO/files --txt path/to/the/TXT/file```
 6. Go to the folder of ALTO files; there should be new files, ending with _.modified.xml_.
 7. In your terminal, go to this folder (`$ cd path/to/the/ALTO/folder`) and enter the following command:
 ```$ zip -r -X transcript.zip *.modified.xml``` which will create a zip of your ALTO files
