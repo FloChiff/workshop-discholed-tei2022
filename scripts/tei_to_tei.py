@@ -1,9 +1,27 @@
+# -*- UTF-8 -*-
+
+"""
+- author: Hugo Scheithauer
+- date: September 2022
+- description: Concatenating all TEI files in a given directory
+- input: XML files
+- output: An XML file with all inputs concatenated
+- usage :
+    python tei_to_tei.py arg1 arg2 arg3
+
+    arg1: directory storing all XML files to be processed
+    arg2: all files to be selected based on a specific extension. e.g. for all PAGE XML: *.page.xml
+    arg3: directory and file name for the XML file output
+
+"""
+
 import glob
 import os
+import sys
 
 from bs4 import BeautifulSoup
 
-# Creating a generic TEI tree to be injected with content later
+# Creating a generic TEI tree, to be injected with content later
 TEI_tree = """<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
     <fileDesc>
@@ -62,18 +80,18 @@ TEI_tree = """<TEI xmlns="http://www.tei-c.org/ns/1.0">
 </TEI>"""
 
 # Directory where the transcribed pages are stored
-directory = "../xml/xml_to_xml"
+directory = sys.argv[1]
 
 # We create the "soup" for the generic TEI tree to begin data manipulation
 soup_TEI = BeautifulSoup(TEI_tree, features='xml')
 
-# Creating a file list storing all page xml files
-filelist = glob.glob(os.path.join(directory, '*.page.xml'))
+# Creating a file list storing all xml files based on a specific extension
+filelist = glob.glob(os.path.join(directory, sys.argv[2]))
 # Sorting the PAGE XML file list for processing
 for f in sorted(filelist):
     print(f"Processing {f}...")
     # Checking if the file is actually a file and if it's a PAGE XML
-    if os.path.isfile(f) and f.endswith('.page.xml'):
+    if os.path.isfile(f):
         # Looking for the sourceDoc in the generic TEI tree
         sourceDoc_all = soup_TEI.find('sourceDoc')
         # Looking for the main div in the generic TEI tree
@@ -101,6 +119,6 @@ for f in sorted(filelist):
                     div_soup = BeautifulSoup(removed_div, 'xml')
                     main_div_all.append(div_soup)
 
-with open("../tei/pride_and_prejudice_all.xml", mode="w+", encoding='utf-8') as fh:
+with open(sys.argv[3], mode="w+", encoding='utf-8') as fh:
     # We write the generic TEI tree injected with the page xml files content into a new file
     fh.write(soup_TEI.prettify())
