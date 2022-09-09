@@ -1,5 +1,19 @@
 # -*- UTF-8 -*-
 
+"""
+- author: Alix Chagué
+- date: July 2022
+- description: Autofill the ALTO files with the transcription
+- input: XML files
+- output: XML files
+- usage :
+    ======
+    python name_of_this_script.py --xml arg1 --txt arg2
+    arg1: folder containing XML files
+    arg2: file containing the transcription
+"""
+
+
 import argparse
 from cgitb import text
 import os

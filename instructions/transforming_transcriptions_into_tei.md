@@ -22,6 +22,6 @@ The steps are pretty much the same, but the XSL stylesheet file for the transfor
 This transformation is meant to concatenate all the pages from your transcription into one and only TEI file, as it was the case for the _Text_.
 
 1. Open your command line interface
-2. Type ```$ python path/to/tei_to_tei.py path/to/xml/folder path/to/new/xml/file```
+2. Type ```$ python path/to/tei_to_tei.py path/to/xml/folder *.specific_extension_of_file.xml path/to/new/xml/file```
 
-The command requires three arguments: the first one is the path to the script, the second one is the path to the folder where your TEI files (from the previous transformation) are located and the third one is the path to the file where all of those TEI files have been concatenated.
+The command requires four arguments: the first one is the path to the script, the second one is the path to the folder where your TEI files (from the previous transformation) are located, the third one is the specific extension of the files we want to select (example: .page.xml) and the fourth one is the path to the file where all of those TEI files have been concatenated.

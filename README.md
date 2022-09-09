@@ -9,13 +9,12 @@ By the end of the session, this workshop will provide the participants with a vi
 
 The program for this workshop is the following: 
 
-* firstly, it will start with a presentation of the pipeline, its objectives and how it works.
+* Firstly, it will start with a presentation of the pipeline, its objectives and how it works.
 * Then, the time we have will be divided into several slots corresponding to every step of the pipeline. Each slot will start with a quick presentation of what is expected of the participants and what tools they will need to use.
 * Next, they will be allotted some time to work with their data and to process them for publication.
 * At the end of the day, a 30mn feedback session will make it possible for each participant as well as for the workshop organizers to assess the benefits of the session and envision further possible collaborations.  
 
 ## Tools introduced during this workshop
-- NAKALA (Share, publish and enhance your scientific data): [https://nakala.fr/](https://nakala.fr/)
 - Cantaloupe (Open-source dynamic image server for on-demand generation of derivatives of high-resolution source images): [https://cantaloupe-project.github.io/](https://cantaloupe-project.github.io/) 
 - eScriptorium (A Digital Text Production Pipeline for Printed and Handwritten Texts using machine learning): [https://escriptorium.paris.inria.fr/](https://escriptorium.paris.inria.fr/) 
 - Oxygen XML (off-the-shelf XML editing software, providing must-have tools, and covering most XML standards): [https://www.oxygenxml.com/](https://www.oxygenxml.com/) 
@@ -23,11 +22,12 @@ The program for this workshop is the following:
 - TEI Publisher (Instant Publishing Toolbox, developped by [e-editiones](https://e-editiones.org/): [https://teipublisher.com/index.html](https://teipublisher.com/index.html) 
 
 ## Content of the repository
-- images: folder of the facsimile for the first step; the images have been extracted from the Internet Archive [[facsimile](https://archive.org/details/JaneAusten-PrideandPrejudice-1sted-1813-vol3)] and Wikipedia [[picture](https://commons.wikimedia.org/wiki/File:Jane_Austen,_from_A_Memoir_of_Jane_Austen_(1870).jpg)],
-- instructions: markdown files giving step by step instructions for each part of the workshop,
-- scripts: XSLT and Python scripts to transform texts for the second step,
-- alto and text: files for the second step,
-- tei, text and xml: XML and TXT files for the third and fourth step.
+- [images](https://github.com/FloChiff/workshop-discholed-tei2022/tree/main/images): folder of the facsimile for the first step; the images have been extracted from the Internet Archive [[facsimile](https://archive.org/details/JaneAusten-PrideandPrejudice-1sted-1813-vol3)] and Wikipedia [[picture](https://commons.wikimedia.org/wiki/File:Jane_Austen,_from_A_Memoir_of_Jane_Austen_(1870).jpg)],
+- [instructions](https://github.com/FloChiff/workshop-discholed-tei2022/tree/main/instructions): markdown files giving step by step instructions for each part of the workshop,
+- scripts: [XSLT](https://github.com/FloChiff/workshop-discholed-tei2022/tree/main/scripts/XSLT) and [Python scripts](https://github.com/FloChiff/workshop-discholed-tei2022/tree/main/scripts/Python) to transform texts for the second step,
+- [alto](https://github.com/FloChiff/workshop-discholed-tei2022/tree/main/alto) and [text](https://github.com/FloChiff/workshop-discholed-tei2022/tree/main/text): files for the second step,
+- [tei](https://github.com/FloChiff/workshop-discholed-tei2022/tree/main/tei), [text](https://github.com/FloChiff/workshop-discholed-tei2022/tree/main/text) and [xml](https://github.com/FloChiff/workshop-discholed-tei2022/tree/main/xml): XML and TXT files for the third and fourth step.
+- [slides](https://github.com/FloChiff/workshop-discholed-tei2022/blob/main/slides_workshop_tei2022.pdf) of the workshop
 
 ## Bibliography
 * Chagué, Alix, and Floriane Chiffoleau. _An accessible and transparent pipeline for publishing historical ego documents_. 2021. ⟨[hal-03180669](https://hal.archives-ouvertes.fr/hal-03180669)⟩  

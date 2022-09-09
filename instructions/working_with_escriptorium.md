@@ -30,7 +30,7 @@ You can also add a transcription already available and made without eScriptorium
 2. Unzip it and make sure that the images are numbered (example: filename_1.xml, filename_2.xml).
 3. Open your transcription (TXT file) and put the following characters at each page break:  
 `==--==--==--==` (make sure it is followed by a linebreak (_\n_)).
-4. Open the Python script _text\_alignement.py_ and at lines 73 and 82, change `PP3_p` by the name of your file prior the number.
+4. Open the Python script _text\_alignement.py_ and at lines 87 and 96, change `PP3_p` by the name of your file prior the number.
 5. Save thoses changes, open your terminal and enter the following command:  
 ```$ python text_alignement.py --xml path/to/the/ALTO/files --txt path/to/the/TXT/file```
 6. Go to the folder of ALTO files; there should be new files, ending with _.modified.xml_.
